@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden lg:min-h-screen max-h-[950px] lg:max-h-[958px]">
+    <section className="relative overflow-hidden max-h-[950px] lg:max-h-[958px]">
       {/* Background Image */}
       <Image
         src={"/images/hero/hero-bg.png"}
@@ -20,7 +20,7 @@ const Hero = () => {
         aria-hidden="true"
         width={284}
         height={842}
-        className="w-52.5 h-165.5 absolute -top-9.5 sm:-top-25.5 left-1/2 -translate-x-1/2 z-4"
+        className="w-52.5 h-165.5 absolute -top-9.5 left-1/2 -translate-x-1/2 z-4 sm:-top-30.5 lg:w-71 lg:h-210.5 lg:-top-4"
       />
 
       <Image
@@ -29,7 +29,7 @@ const Hero = () => {
         aria-hidden="true"
         width={284}
         height={842}
-        className="w-52.5 h-165.5 absolute -top-6 sm:-top-22 left-[42%] -translate-x-1/2 z-5"
+        className="w-52.5 h-165.5 absolute -top-6 left-[42%] -translate-x-1/2 z-5 sm:-top-27 lg:w-71 lg:h-210.5 lg:top-0 lg:left-[47.5%]"
       />
 
       <Image
@@ -38,61 +38,41 @@ const Hero = () => {
         aria-hidden="true"
         width={284}
         height={842}
-        className="w-60 h-165.5 absolute -top-18 sm:-top-34 left-[60%] -translate-x-1/2 -rotate-13 origin-center z-6"
+        className="w-52.5 h-165.5 absolute -top-18 left-[60%] -translate-x-1/2 -rotate-13  origin-center z-6 sm:-top-39 lg:w-71 lg:h-210.5 lg:-top-18 lg:left-[53.5%]"
+        loading="eager"
       />
 
       {/* Hero Content */}
-      <div className="relative z-3 px-4 sm:px-8 pt-121.5 sm:pt-40.5 pb-24.5 sm:pb-26 flex flex-col items-center gap-15 sm:gap-21">
-        <div className="w-full flex items-start justify-center sm:justify-start flex-wrap gap-y-5 sm:gap-y-8.5">
+      <div className="relative max-w-[1440px] mx-auto z-3 px-4 sm:px-8 lg:px-10 pt-121.5 sm:pt-40.5 pb-24.5 sm:pb-26 flex flex-col items-center gap-15 sm:gap-21">
+        <div className="w-full relative">
+          {/* Mobile Title */}
           <Image
-            src={"/images/hero/hero-text-world.svg"}
-            alt="Hero Title Icon"
-            width={100}
-            height={100}
-            className="w-auto h-14 sm:h-22"
+            src={"/images/hero/hero-title-mobile.svg"}
+            alt="Hero Title Mobile"
+            width={388}
+            height={284}
+            className="w-full h-auto block sm:hidden"
+          />
+
+          {/* Desktop Title */}
+          <Image
+            src={"/images/hero/hero-title-desktop.svg"}
+            alt="Hero Title Mobile"
+            width={1360}
+            height={576}
+            className="w-full h-auto hidden sm:block"
           />
 
           <Image
             src={"/images/hero/hero-logo.svg"}
-            alt="Hero Title Icon"
-            width={100}
-            height={100}
-            className="w-auto h-14 sm:h-22 ml-auto sm:order-last"
+            alt="Hero Logo"
+            aria-hidden="true"
+            width={56}
+            height={56}
+            className="w-14.5 h-auto absolute top-0 right-0 sm:w-22 sm:top-auto sm:bottom-0 lg:w-41"
           />
 
-          <Image
-            src={"/images/hero/hero-text-wide.svg"}
-            alt="Hero Title Icon"
-            width={100}
-            height={100}
-            className="w-auto h-14 sm:h-22 sm:ml-26.5"
-          />
-
-          <Image
-            src={"/images/hero/hero-text-ai.svg"}
-            alt="Hero Title Icon"
-            width={100}
-            height={100}
-            className="w-auto h-14 sm:h-22 ml-auto sm:ml-0"
-          />
-
-          <Image
-            src={"/images/hero/hero-text-conference.svg"}
-            alt="Hero Title Icon"
-            width={100}
-            height={100}
-            className="w-full sm:w-auto h-auto sm:h-22 sm:ml-auto"
-          />
-
-          <Image
-            src={"/images/hero/hero-text-2026.svg"}
-            alt="Hero Title Icon"
-            width={100}
-            height={100}
-            className="w-auto h-14 sm:h-22"
-          />
-
-          <p className="sm:hidden w-56.5 font-roboto-mono text-xs leading-[130%] ml-auto opacity-80">
+          <p className="block sm:hidden absolute bottom-2 right-0 w-56.5 font-roboto-mono text-xs leading-[130%] opacity-80">
             Humans live with limitations. The desire to transcend them drives
             progress and innovation.
           </p>
