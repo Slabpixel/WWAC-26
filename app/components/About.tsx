@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="relative overflow-hidden">
+    <section id="about" className="relative overflow-hidden">
       {/* Mobile  */}
       <div className="flex flex-col px-4 pt-10 pb-15 gap-15 sm:hidden">
         <div className="w-full relative flex flex-col gap-117.5">

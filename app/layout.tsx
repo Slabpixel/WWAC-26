@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto_Mono, Fira_Mono } from "next/font/google";
+import { Roboto_Mono, Fira_Mono, Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
@@ -34,7 +37,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`dark ${robotoMono.variable} ${firaMono.variable} ${menoDisplay.variable} h-full antialiased`}
+      className={cn("dark", "h-full", "antialiased", robotoMono.variable, firaMono.variable, menoDisplay.variable, "font-sans", inter.variable)}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
