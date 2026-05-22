@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
@@ -18,7 +18,7 @@ const firaMono = Fira_Mono({
 });
 
 const menoDisplay = localFont({
-  src: "../public/fonts/fonnts.com-Meno-Display-Extra-Cond.otf",
+  src: "../public/fonts/fonnts.com-Meno-Display-Extra-Cond-Semi-Bold.otf",
   variable: "--font-meno-display",
   display: "swap",
   weight: "400",
@@ -37,7 +37,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("dark", "h-full", "antialiased", robotoMono.variable, firaMono.variable, menoDisplay.variable, "font-sans", inter.variable)}
+      className={cn(
+        "dark",
+        "h-full",
+        "antialiased",
+        robotoMono.variable,
+        firaMono.variable,
+        menoDisplay.variable,
+        "font-sans",
+        inter.variable,
+      )}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

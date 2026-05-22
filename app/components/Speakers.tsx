@@ -72,6 +72,7 @@ const Speakers = () => {
                   width={250}
                   height={352}
                   className="block h-auto w-62.5 lg:w-110.5"
+                  loading="eager"
                 />
               </CarouselItem>
             ))}
@@ -91,6 +92,7 @@ const Speakers = () => {
               width={30}
               height={20}
               className="w-7.5 h-auto pointer-events-none lg:w-15"
+              loading="eager"
             />
           </button>
         </div>
@@ -108,6 +110,7 @@ const Speakers = () => {
               width={30}
               height={20}
               className="w-7.5 h-auto pointer-events-none lg:w-15"
+              loading="eager"
             />
           </button>
 
@@ -123,6 +126,7 @@ const Speakers = () => {
               width={30}
               height={20}
               className="w-7.5 h-auto pointer-events-none lg:w-15"
+              loading="eager"
             />
           </button>
         </div>

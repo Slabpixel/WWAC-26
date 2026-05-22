@@ -11,6 +11,7 @@ const Hero = () => {
         width={1440}
         height={900}
         className="absolute inset-0 w-full h-full object-cover z-1"
+        loading="eager"
       />
 
       {/* Hero Lanyard */}
@@ -21,6 +22,7 @@ const Hero = () => {
         width={284}
         height={842}
         className="w-52.5 h-165.5 absolute -top-9.5 left-1/2 -translate-x-1/2 z-4 sm:-top-30.5 lg:w-71 lg:h-210.5 lg:-top-4"
+        loading="eager"
       />
 
       <Image
@@ -30,6 +32,7 @@ const Hero = () => {
         width={284}
         height={842}
         className="w-52.5 h-165.5 absolute -top-6 left-[42%] -translate-x-1/2 z-5 sm:-top-27 lg:w-71 lg:h-210.5 lg:top-0 lg:left-[47.5%]"
+        loading="eager"
       />
 
       <Image
@@ -52,6 +55,7 @@ const Hero = () => {
             width={388}
             height={284}
             className="w-full h-auto block sm:hidden"
+            loading="eager"
           />
 
           {/* Desktop Title */}
@@ -61,6 +65,7 @@ const Hero = () => {
             width={1360}
             height={576}
             className="w-full h-auto hidden sm:block"
+            loading="eager"
           />
 
           <Image
@@ -70,6 +75,7 @@ const Hero = () => {
             width={56}
             height={56}
             className="w-14.5 h-auto absolute top-0 right-0 sm:w-22 sm:top-auto sm:bottom-0 lg:w-41"
+            loading="eager"
           />
 
           <p className="block sm:hidden absolute bottom-2 right-0 w-56.5 font-roboto-mono text-xs leading-[130%] opacity-80">
@@ -95,6 +101,7 @@ const Hero = () => {
               width={20}
               height={20}
               className="w-auto h-5"
+              loading="eager"
             />
           </div>
         </div>

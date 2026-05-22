@@ -6,7 +6,7 @@ const About = () => {
       {/* Mobile  */}
       <div className="flex flex-col px-4 pt-10 pb-15 gap-15 sm:hidden">
         <div className="w-full relative flex flex-col gap-117.5">
-          <h2 className="font-meno-display text-4xl leading-[95%] tracking-[-0.02em] uppercase">
+          <h2 className="font-meno-display text-[2.375rem] leading-[95%] tracking-[-0.02em] uppercase">
             A 3-day immersive event featuring world-class speakers
           </h2>
 
@@ -16,6 +16,7 @@ const About = () => {
             width={388}
             height={445}
             className="absolute w-full h-auto top-22.5"
+            loading="eager"
           />
 
           <div className="flex flex-col gap-7">
@@ -51,7 +52,7 @@ const About = () => {
             </p>
           </div>
 
-          <h2 className="w-56 absolute bottom-0 right-0 font-meno-display text-4xl leading-[95%] tracking-[-0.02em] uppercase text-right">
+          <h2 className="w-56 absolute bottom-0 right-0 font-meno-display text-[2.375rem] leading-[95%] tracking-[-0.02em] uppercase text-right">
             live performan ces and interactive experiences
           </h2>
         </div>
@@ -89,9 +90,10 @@ const About = () => {
         </div>
       </div>
 
+      {/* Desktop */}
       <div className="hidden max-w-[1440px] mx-auto sm:flex flex-col relative px-8 pt-27.5 pb-31 gap-27.5 lg:px-10">
         <div className="flex items-start justify-between">
-          <h2 className="w-110 font-meno-display text-[2.5rem] leading-[95%] tracking-[-0.02em] uppercase lg:w-210 lg:text-[4.75rem]">
+          <h2 className="w-110 font-meno-display text-[2.5rem] leading-[95%] tracking-[-0.02em] uppercase lg:w-210 lg:text-[5rem]">
             A 3-day immersive event featuring world-class speakers
           </h2>
 
@@ -102,6 +104,7 @@ const About = () => {
             width={170}
             height={170}
             className="w-20 h-auto lg:w-42.5"
+            loading="eager"
           />
         </div>
 
@@ -112,6 +115,7 @@ const About = () => {
             width={624}
             height={338}
             className="w-100 h-auto lg:w-156"
+            loading="eager"
           />
 
           <p className="hidden lg:block w-79 font-roboto-mono leading-[130%] opacity-80">
@@ -127,6 +131,7 @@ const About = () => {
             height={100}
             alt="About Square Image 1"
             className="w-25 h-auto"
+            loading="eager"
           />
 
           <Image
@@ -135,6 +140,7 @@ const About = () => {
             height={100}
             alt="About Square Image 1"
             className="w-25 h-auto"
+            loading="eager"
           />
 
           <Image
@@ -143,6 +149,7 @@ const About = () => {
             height={100}
             alt="About Square Image 1"
             className="w-25 h-auto"
+            loading="eager"
           />
         </div>
 
@@ -179,7 +186,7 @@ const About = () => {
             </div>
           </div>
 
-          <h2 className="w-90 font-meno-display text-[2.5rem] leading-[95%] tracking-[-0.02em] uppercase text-right lg:w-194 lg:text-[4.875rem]">
+          <h2 className="w-90 font-meno-display text-[2.5rem] leading-[95%] tracking-[-0.02em] uppercase text-right lg:w-194 lg:text-[5rem]">
             live performances and interactive experiences
           </h2>
         </div>

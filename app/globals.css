@@ -102,6 +102,11 @@ html {
   }
 }
 
+@utility text-trim-cap {
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
 .dark {
   --background: #fffdf2;
   --foreground: #000000;
